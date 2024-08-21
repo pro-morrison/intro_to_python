@@ -1,5 +1,6 @@
 #basic python
-print("hello") # it prints hello to the terminal
+
+"""print("hello") # it prints hello to the terminal
 print('hello') # it also prints hello to the terminal
 #print(hello) # it gives an error
 
@@ -31,6 +32,31 @@ print (third)
 name = input("what is your name?")
 print(type(name))
 age = input("What is your age?")
-print(type(age))
+print(type(age))"""
 
 #CONVERSIONS
+#convert 32 degrees to radian
+import math
+degrees = 32
+radian = degrees * (math.pi/180)
+print(round(radian, 4))
+
+#ASK user for the value of the radius and print out surface area and volume of a sphere
+radius = float(input("Enter the value of the radius: "))
+surfaceArea = 4 * math.pi * (radius**2)
+volume = (4/3) * math.pi * (radius**3)
+print(round(surfaceArea, 4))
+print(round(volume, 4))
+
+# what time of day it is
+print(f"Its 3:38 pm, therefore its afternoon")
+
+#split sentence into words
+sentence = "Welcome to Accra"
+words = sentence.split()
+print(words)
+
+#join a list of words
+#way 1
+print("Accra " + "is " + "a " + "big " + "city")
+print(f"Accra is a big city")
